@@ -1,11 +1,15 @@
 
 body {
     color: #404040;
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.625em;
     position: relative
+}
+
+body, a, p, span, li,
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
 }
 
 .row {
@@ -27,9 +31,6 @@ body {
 	margin-left: auto;
 }
 
-a, p, span, li {
-	font-family: "Roboto", sans-serif;
-}
 
 .a-link {
     color: #fff;
@@ -43,7 +44,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Roboto", sans-serif;
     color: #222;
     line-height: 1.2em !important;
     margin-bottom: 0;
@@ -355,7 +355,7 @@ h6,
 
 .logo {
 	border-radius: 5%;
-	max-width: 65% !important;
+	max-width: 50% !important;
 }
 
 /* Start Nav Menu */
@@ -364,7 +364,7 @@ h6,
 }
 
 .navbar-nav {
-	margin-right: 100px;
+	/* margin-right: 100px; */
 	height: 50px;
 }
 
@@ -390,10 +390,10 @@ h6,
 .header-content {
 	position: fixed;
 	top: 26px;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(104, 188, 230, 0.5);
 	color: #f1f1f1;
 	width: 100%;
-	padding: 10px;
+	padding: 0px;
 }
 
 /* Start Banner */
@@ -502,7 +502,7 @@ ul, ol {
 }
 /* Black */
 .section-bg-3 {
-	background-color: #000;
+	background-color: #F56A56;
 }
 /* Matte Black */
 .section-bg-4 {
@@ -531,11 +531,11 @@ ul, ol {
 
 .about-us-video-content {
     position: absolute;
-    top: 136px;
+    top: 126px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     width: 100%;
-    padding: 108px;
+    padding: 120px;
 }
 
 .about-us-video-content h1 {
@@ -559,16 +559,16 @@ ul, ol {
 }
 
 .about-us-division {
-	border-right: 3px dotted #000;	
+	border-right: 3px dotted #F56A56;	
 }
 
 .about-us-specialize {
-	border-left: 5px solid #000;
+	border-left: 5px solid #F56A56;
 	padding: 15px;
 }
 .specialize-tools {
 	font-weight: bold;
-	color: gray;
+	color: #F56A56;
 }
 
 .fa-quote-left, .fa-quote-right {
@@ -586,11 +586,11 @@ ul, ol {
 }
 
 .contact-form {
-	box-shadow: 5px 5px 15px 0px #000;
+	box-shadow: 5px 5px 15px 0px #F56A56;
 }
 
 .contact-info {
-	background: #fff;
+	background: #F5F5F5;
 	box-shadow: 5px 5px 10px 5px #dcdcdc;
 }
 
@@ -615,7 +615,7 @@ ul, ol {
 }
 
 .form-control {
-	background: #000;
+	background: #fff;
 	color: #fff;
 	border-radius: 0px;
 	border: 1px solid #fff;
@@ -658,6 +658,99 @@ input:invalid {
 	justify-content: center;
 }
 
+
+/* Start Banner */
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+	margin-left: -45px;
+	background: #F56A56;
+}
+            
+#carousel, #navigation {
+    flex: initial;
+    display: block;
+}
+            
+#carousel {
+    overflow: hidden;
+    width: 90%;
+    height: 810px;
+    /* border-radius: 4px; */
+    background-color: #fff;
+}
+            
+.p-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+            
+#button_a:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); 
+}
+            
+#button_b:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); 
+}
+
+#button_c:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%); 
+}
+
+#button_d:checked ~ #carousel .p-wrapper {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%); 
+}
+            
+[class^="panel_"] {
+    overflow: auto;
+    position: relative;
+    width: inherit;
+    height: inherit;
+    /* padding: 48px; */
+}
+            
+#navigation {
+    margin-left: 24px;
+}
+
+[class^="label_"] {
+    display: block;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 55px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 4px;
+    color: #aaa;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+            
+[class^="label_"]:hover {
+    color: #444;
+    background-color: #ffeed9;
+}
+            
+#button_a:checked ~ #navigation .label_a,
+#button_b:checked ~ #navigation .label_b,
+#button_c:checked ~ #navigation .label_c,
+#button_d:checked ~ #navigation .label_d {
+     cursor: default;
+     color: #fff;
+     background-color: #222;
+}
+
+/* End Banner */
 
 /* *********************************************************** */
 
