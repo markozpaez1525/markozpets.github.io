@@ -666,7 +666,7 @@ input:invalid {
     justify-content: center;
     align-items: center;
     /* min-height: 100vh; */
-	margin-left: -45px;
+	/* margin-left: -45px; */
 	background: #F56A56;
 }
             
@@ -677,10 +677,10 @@ input:invalid {
             
 #carousel {
     overflow: hidden;
-    width: 90%;
-    height: 810px;
-    /* border-radius: 4px; */
+    width: 85%;
+    height: 741px;
     background-color: #fff;
+	margin-left: -139px;
 }
             
 .p-wrapper {
@@ -719,7 +719,7 @@ input:invalid {
 }
             
 #navigation {
-    margin-left: 24px;
+    margin-left: 100px;
 }
 
 [class^="label_"] {
