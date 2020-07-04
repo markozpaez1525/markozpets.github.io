@@ -11,6 +11,16 @@
 		
 		/* ToolTip */ 
 		$('[data-toggle="tooltip"]').tooltip();
+		
+		$('#closeIcon').hide();  
+		$('#hamburgerIcon').click(function() {
+			$('#hamburgerIcon').hide();
+			$('#closeIcon').show();  
+		});
+		$('#closeIcon').click(function() {
+			$('#closeIcon').hide();
+			$('#hamburgerIcon').show();  
+		});
 
 		/* Navigation ScrollTo */ 
 		function slideUpDown(yourElement, yOffset) {

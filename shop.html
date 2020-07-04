@@ -43,7 +43,10 @@
 						<img src="img/img-banner-logo.jpg" class="logo img-fluid" alt="Logo">
 					</a>
 				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button id="closeIcon" type="button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-times"></i>
+				</button>
+				<button id="hamburgerIcon" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 			</div>
@@ -103,10 +106,6 @@
 		<!-- Start Container Fluid -->
 		<div class="container-fluid"> 
 		
-		
-
-			
-		
 			<!--Banner-->
 			<section id="sectionBanner">
 				<!-- <div class="banner-bg"> -->
@@ -122,37 +121,29 @@
 			<!-- Banner -->
 
 			<!-- Start Section 1 -->
-			<section class="section-gap section-bg-1 mt-120">
+			<section class="section-gap section-bg-1 shopping-cart">
 			
 				<section class="container">
 					<div class="row">
-						<div class="col-md-8">
+						<div class="col-lg-8 col-md-8">
 							<div class="card">
-								<div class="card-header">
-									YOUR PET ACCESSORIES
+								<div class="card-header text-white">
+									Your Pet Accessories
 								</div>
 								<div class="card-body">
 									<div class="row">
 										<!-- BEGIN PRODUCTS -->
-										<div class="col-lg-4 col-md-4 col-sm-6">
+										<div class="col-lg-6 col-md-6 col-12">
 											<div class="card">
 												<div class="card-body">
 													<div class="sc-product-item thumbnail">
 														<img class="card-img-top" data-name="product_image" src="img/p-1.jpg" alt="pet product">
 														<div class="caption">
 															<h4 data-name="product_name">Dog Tag</h4>
-															<p data-name="product_desc">Product details</p>
+															<a><p data-name="product_desc" class="mt-10">View Details</p></a>
 															<hr class="line">
 															
 															<div>
-																<!-- <div class="form-group"> -->
-																	<!-- <label>Size: </label> -->
-																	<!-- <select name="product_size" class="form-control input-sm"> -->
-																		<!-- <option>S</option> -->
-																		<!-- <option>M</option> -->
-																		<!-- <option>L</option> -->
-																	<!-- </select> -->
-																<!-- </div> -->
 																<div class="form-group">
 																	<label>Color: </label><br />
 																	<label class="radio-inline">
@@ -166,13 +157,15 @@
 																	</label>
 																</div>
 																<div class="form-group2">
+																	<span>Quantity: </span>
 																	<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
 																</div>
-																<strong class="price pull-left">$5.00</strong>
+																
+																<strong class="price pull-left mt-10"><span>Price: </span>$5.00</strong><br />
 																
 																<input name="product_price" value="5.00" type="hidden" />
 																<input name="product_id" value="12" type="hidden" />
-																<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+																<button class="sc-add-to-cart btn btn-success btn-sm pull-right mt-10">Add to cart</button>
 															</div>
 															<div class="clearfix"></div>
 														</div>
@@ -180,26 +173,18 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
+										<div class="col-lg-6 col-md-6 col-12">
 											<div class="card">
 											  <div class="card-body">
 													<div class="sc-product-item thumbnail">
 														<img class="card-img-top" data-name="product_image" src="img/p-2.jpg" alt="pet product">
 														<div class="caption">
 															<h4 data-name="product_name">Dog Harness</h4>
-															<p data-name="product_desc">Product details</p>
+															<a><p data-name="product_desc" class="mt-10">View Details</p></a>
 														
 															<hr class="line">
 															
 															<div>
-																<!-- <div class="form-group"> -->
-																	<!-- <label>Size: </label> -->
-																	<!-- <select name="product_size" class="form-control input-sm"> -->
-																		<!-- <option>S</option> -->
-																		<!-- <option>M</option> -->
-																		<!-- <option>L</option> -->
-																	<!-- </select> -->
-																<!-- </div> -->
 																<div class="form-group">
 																	<label>Color: </label><br />
 																	<label class="radio-inline">
@@ -212,16 +197,15 @@
 																		<input type="radio" name="product_color" value="green"> green
 																	</label>
 																</div>
-																<div class="checkbox">
-																	<label>
-																		<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
-																	</label>
+																<div class="form-group2">
+																	<span>Quantity: </span>
+																	<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
 																</div>
-																<strong class="price pull-left">$9.50</strong>
+																<strong class="price pull-left mt-10"><span>Price: </span>$9.50</strong><br />
 																
 																<input name="product_price" value="9.50" type="hidden" />
 																<input name="product_id" value="145" type="hidden" />
-																<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+																<button class="sc-add-to-cart btn btn-success btn-sm pull-right mt-10">Add to cart</button>
 															</div>
 															<div class="clearfix"></div>
 														</div>
@@ -230,26 +214,18 @@
 											</div>
 											
 										</div>
-										<div class="col-lg-4 col-md-4 col-sm-6">
+										<div class="col-lg-6 col-md-6 col-12">
 											<div class="card">
 												<div class="card-body">
 													<div class="sc-product-item thumbnail">
 														<img class="card-img-top" data-name="product_image" src="img/p-3.jpg" alt="pet product">
 														<div class="caption">
 															<h4 data-name="product_name">Dog GPS</h4>
-															<p data-name="product_desc">Product details</p>
+															<a><p data-name="product_desc" class="mt-10">View Details</p></a>
 														
 															<hr class="line">
 															
 															<div>
-																<!-- <div class="form-group"> -->
-																	<!-- <label>Size: </label> -->
-																	<!-- <select name="product_size" class="form-control input-sm"> -->
-																		<!-- <option>S</option> -->
-																		<!-- <option>M</option> -->
-																		<!-- <option>L</option> -->
-																	<!-- </select> -->
-																<!-- </div> -->
 																<div class="form-group">
 																	<label>Color: </label><br />
 																	<label class="radio-inline">
@@ -262,16 +238,15 @@
 																		<input type="radio" name="product_color" value="green"> green
 																	</label>
 																</div>
-																<div class="checkbox">
-																	<label>
-																		<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
-																	</label>
+																<div class="form-group2">
+																	<span>Quantity: </span>
+																	<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
 																</div>
-																<strong class="price pull-left">$4.50</strong>
+																<strong class="price pull-left mt-10"><span>Price: </span>$4.50</strong><br />
 																
 																<input name="product_price" value="4.50" type="hidden" />
 																<input name="product_id" value="145" type="hidden" />
-																<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+																<button class="sc-add-to-cart btn btn-success btn-sm pull-right mt-10">Add to cart</button>
 															</div>
 															<div class="clearfix"></div>
 														</div>
@@ -281,25 +256,17 @@
 											
 										</div>
 										
-										<div class="col-md-4 col-sm-6">
+										<div class="col-lg-6 col-md-6 col-12">
 											<div class="card">
 												<div class="card-body">
 													<div class="sc-product-item thumbnail">
 														<img class="card-img-top" data-name="product_image" src="img/p-4.jpg" alt="pet product">
 														<div class="caption">
 															<h4 data-name="product_name">Cat Harness</h4>
-															<p data-name="product_desc">Product details</p>
+															<a><p data-name="product_desc" class="mt-10">View Details</p></a>
 														
 															<hr class="line">
 															<div>
-																<!-- <div class="form-group"> -->
-																	<!-- <label>Size: </label> -->
-																	<!-- <select name="product_size" class="form-control input-sm"> -->
-																		<!-- <option>S</option> -->
-																		<!-- <option>M</option> -->
-																		<!-- <option>L</option> -->
-																	<!-- </select> -->
-																<!-- </div> -->
 																<div class="form-group">
 																	<label>Color: </label><br />
 																	<label class="radio-inline">
@@ -312,16 +279,15 @@
 																		<input type="radio" name="product_color" value="green"> green
 																	</label>
 																</div>
-																<div class="checkbox">
-																	<label>
-																		<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
-																	</label>
+																<div class="form-group2">
+																	<span>Quantity: </span>
+																	<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
 																</div>
-																<strong class="price pull-left">$4.95</strong>
+																<strong class="price pull-left mt-10"><span>Price: </span>$4.95</strong><br />
 																
 																<input name="product_price" value="4.95" type="hidden" />
 																<input name="product_id" value="154" type="hidden" />
-																<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+																<button class="sc-add-to-cart btn btn-success btn-sm pull-right mt-10">Add to cart</button>
 															</div>
 															<div class="clearfix"></div>
 														</div>
@@ -331,25 +297,17 @@
 											
 										</div>
 										
-										<div class="col-md-4 col-sm-6">
+										<div class="col-lg-6 col-md-6 col-12">
 											<div class="card">
 												<div class="card-body">
 													<div class="sc-product-item thumbnail">
 														<img class="card-img-top" data-name="product_image" src="img/p-5.jpg" alt="pet product">
 														<div class="caption">
 															<h4 data-name="product_name">Cat Scarf</h4>
-															<p data-name="product_desc">Product details</p>
+															<a><p data-name="product_desc" class="mt-10">View Details</p></a>
 														
 															<hr class="line">
 															<div>
-																<!-- <div class="form-group"> -->
-																	<!-- <label>Size: </label> -->
-																	<!-- <select name="product_size" class="form-control input-sm"> -->
-																		<!-- <option>S</option> -->
-																		<!-- <option>M</option> -->
-																		<!-- <option>L</option> -->
-																	<!-- </select> -->
-																<!-- </div> -->
 																<div class="form-group">
 																	<label>Color: </label><br />
 																	<label class="radio-inline">
@@ -362,16 +320,15 @@
 																		<input type="radio" name="product_color" value="green"> green
 																	</label>
 																</div>
-																<div class="checkbox">
-																	<label>
-																		<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
-																	</label>
+																<div class="form-group2">
+																	<span>Quantity: </span>
+																	<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
 																</div>
-																<strong class="price pull-left">$9.95</strong>
+																<strong class="price pull-left mt-10"><span>Price: </span>$9.95</strong><br />
 																
 																<input name="product_price" value="9.95" type="hidden" />
 																<input name="product_id" value="155" type="hidden" />
-																<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+																<button class="sc-add-to-cart btn btn-success btn-sm pull-right mt-10">Add to cart</button>
 															</div>
 															<div class="clearfix"></div>
 														</div>
@@ -381,25 +338,17 @@
 											
 										</div>
 										
-										<div class="col-md-4 col-sm-6">
+										<div class="col-lg-6 col-md-6 col-12">
 											<div class="card">
 												<div class="card-body">
 													<div class="sc-product-item thumbnail">
 														<img class="card-img-top" data-name="product_image" src="img/p-6.jpg" alt="pet product">
 														<div class="caption">
 															<h4 data-name="product_name">Cat Collar</h4>
-															<p data-name="product_desc">Product details</p>
+															<a><p data-name="product_desc" class="mt-10">View Details</p></a>
 														
 															<hr class="line">
 															<div>
-																<!-- <div class="form-group"> -->
-																	<!-- <label>Size: </label> -->
-																	<!-- <select name="product_size" class="form-control input-sm"> -->
-																		<!-- <option>S</option> -->
-																		<!-- <option>M</option> -->
-																		<!-- <option>L</option> -->
-																	<!-- </select> -->
-																<!-- </div> -->
 																<div class="form-group">
 																	<label>Color: </label><br />
 																	<label class="radio-inline">
@@ -412,16 +361,178 @@
 																		<input type="radio" name="product_color" value="green"> green
 																	</label>
 																</div>
-																<div class="checkbox">
-																	<label>
-																		<input type="checkbox" name="gift_wrap" value="1"> Gift wrap
-																	</label>
+																<div class="form-group2">
+																	<span>Quantity: </span>
+																	<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
 																</div>
-																<strong class="price pull-left">$11.95</strong>
+																<strong class="price pull-left mt-10"><span>Price: </span>$11.95</strong><br />
 																
 																<input name="product_price" value="11.95" type="hidden" />
 																<input name="product_id" value="145" type="hidden" />
-																<button class="sc-add-to-cart btn btn-success btn-sm pull-right">Add to cart</button>
+																<button class="sc-add-to-cart btn btn-success btn-sm pull-right mt-10">Add to cart</button>
+															</div>
+															<div class="clearfix"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										
+										<div class="col-lg-6 col-md-6 col-12">
+											<div class="card">
+												<div class="card-body">
+													<div class="sc-product-item thumbnail">
+														<img class="card-img-top" data-name="product_image" src="img/p-7.jpg" alt="pet product">
+														<div class="caption">
+															<h4 data-name="product_name">Double Cotton Chew Knot</h4>
+															<a><p data-name="product_desc" class="mt-10">View Details</p></a>
+														
+															<hr class="line">
+															<div>
+																<div class="form-group">
+																	<label>Color: </label><br />
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="red"> red
+																	</label>
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="blue"> blue
+																	</label>
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="green"> green
+																	</label>
+																</div>
+																<div class="form-group2">
+																	<span>Quantity: </span>
+																	<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+																</div>
+																<strong class="price pull-left mt-10"><span>Price: </span>$11.95</strong><br />
+																
+																<input name="product_price" value="11.95" type="hidden" />
+																<input name="product_id" value="145" type="hidden" />
+																<button class="sc-add-to-cart btn btn-success btn-sm pull-right mt-10">Add to cart</button>
+															</div>
+															<div class="clearfix"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										
+										<div class="col-lg-6 col-md-6 col-12">
+											<div class="card">
+												<div class="card-body">
+													<div class="sc-product-item thumbnail">
+														<img class="card-img-top" data-name="product_image" src="img/p-8.jpg" alt="pet product">
+														<div class="caption">
+															<h4 data-name="product_name">Plush Squeaky Bone Veggies</h4>
+															<a><p data-name="product_desc" class="mt-10">View Details</p></a>
+														
+															<hr class="line">
+															<div>
+																<div class="form-group">
+																	<label>Color: </label><br />
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="red"> red
+																	</label>
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="blue"> blue
+																	</label>
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="green"> green
+																	</label>
+																</div>
+																<div class="form-group2">
+																	<span>Quantity: </span>
+																	<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+																</div>
+																<strong class="price pull-left mt-10"><span>Price: </span>$11.95</strong><br />
+																
+																<input name="product_price" value="11.95" type="hidden" />
+																<input name="product_id" value="145" type="hidden" />
+																<button class="sc-add-to-cart btn btn-success btn-sm pull-right mt-10">Add to cart</button>
+															</div>
+															<div class="clearfix"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										
+										<div class="col-lg-6 col-md-6 col-12">
+											<div class="card">
+												<div class="card-body">
+													<div class="sc-product-item thumbnail">
+														<img class="card-img-top" data-name="product_image" src="img/p-9.jpg" alt="pet product">
+														<div class="caption">
+															<h4 data-name="product_name">Bite Resistant Chew Toy</h4>
+															<a><p data-name="product_desc" class="mt-10">View Details</p></a>
+														
+															<hr class="line">
+															<div>
+																<div class="form-group">
+																	<label>Color: </label><br />
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="red"> red
+																	</label>
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="blue"> blue
+																	</label>
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="green"> green
+																	</label>
+																</div>
+																<div class="form-group2">
+																	<span>Quantity: </span>
+																	<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+																</div>
+																<strong class="price pull-left mt-10"><span>Price: </span>$11.95</strong><br />
+																
+																<input name="product_price" value="11.95" type="hidden" />
+																<input name="product_id" value="145" type="hidden" />
+																<button class="sc-add-to-cart btn btn-success btn-sm pull-right mt-10">Add to cart</button>
+															</div>
+															<div class="clearfix"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-6 col-md-6 col-12">
+											<div class="card">
+												<div class="card-body">
+													<div class="sc-product-item thumbnail">
+														<img class="card-img-top" data-name="product_image" src="img/p-10.jpg" alt="pet product">
+														<div class="caption">
+															<h4 data-name="product_name">Pet Molar Tooth Cleaner</h4>
+															<a><p data-name="product_desc" class="mt-10">View Details</p></a>
+														
+															<hr class="line">
+															<div>
+																<div class="form-group">
+																	<label>Color: </label><br />
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="red"> red
+																	</label>
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="blue"> blue
+																	</label>
+																	<label class="radio-inline">
+																		<input type="radio" name="product_color" value="green"> green
+																	</label>
+																</div>
+																<div class="form-group2">
+																	<span>Quantity: </span>
+																	<input class="sc-cart-item-qty" name="product_quantity" min="1" value="1" type="number">
+																</div>
+																<strong class="price pull-left mt-10"><span>Price: </span>$9.95</strong><br />
+																
+																<input name="product_price" value="9.95" type="hidden" />
+																<input name="product_id" value="145" type="hidden" />
+																<button class="sc-add-to-cart btn btn-success btn-sm pull-right mt-10">Add to cart</button>
 															</div>
 															<div class="clearfix"></div>
 														</div>
@@ -437,66 +548,37 @@
 							
 						</div>
 						
-						<aside class="col-md-4">
+						<div class="col-lg-4 col-md-4">
 							<!-- Paypal Submit URL : https://www.paypal.com/cgi-bin/webscr -->
 							<!-- Paypal Sandbox Submit URL: https://www.sandbox.paypal.com/cgi-bin/webscr -->      
 							
-							<!-- Paypal Cart submit form -->
-							<form action="https://www.paypal.com/cgi-bin/webscr" method="POST"> 
-								<!-- SmartCart element -->
-								<div id="smartcart"></div>
-								
-								<!-- Paypal required info, Please update based on your details -->
-								<input name="business" value="markozpaez1525@gmail.com" type="hidden">            
-								<input name="currency_code" value="USD" type="hidden">
-								<input name="return" value="http://www.yourdomain.com/yoursuccessurl" type="hidden">            
-								<input name="cancel_return" value="http://www.yourdomain.com/yourcancelurl" type="hidden">
-								
-								<input name="cmd" value="_cart" type="hidden">    
-								<input name="upload" value="1" type="hidden">            
-							</form>
-						</aside>
+							<!-- <div class="card"> -->
+								<!-- <div class="card-body"> -->
+									<!-- Paypal Cart submit form -->
+									<form action="https://www.paypal.com/cgi-bin/webscr" method="POST"> 
+										<!-- SmartCart element -->
+										<div id="smartcart"></div>
+										
+										<!-- Paypal required info, Please update based on your details -->
+										<input name="business" value="markozpaez1525@gmail.com" type="hidden">            
+										<input name="currency_code" value="USD" type="hidden">
+										<input name="return" value="http://www.yourdomain.com/yoursuccessurl" type="hidden">            
+										<input name="cancel_return" value="http://www.yourdomain.com/yourcancelurl" type="hidden">
+										
+										<input name="cmd" value="_cart" type="hidden">    
+										<input name="upload" value="1" type="hidden">            
+									</form>
+								<!-- </div> -->
+							<!-- </div> -->
+							
+						</div>
 					</div>
 				</section>
 			</section>
 			<!-- End Section 1 -->
 
-			<!-- Start Section 2 -->
-			<!-- <section class="section-gap section-bg-2"> -->
-				<!-- <div class="container"> -->
-					<!-- <div class="row"> -->
-						<!-- <div class="col-lg-12"> -->
-							<!-- <h1>Section 1 Title</h1> -->
-						<!-- </div> -->
-					<!-- </div> -->
-				<!-- </div> -->
-			<!-- </section> -->
-			<!-- End Section 2 -->
+			<div class="container line-divider"> </div>
 			
-			<!-- Start Section 3 -->
-			<!-- <section class="section-gap section-bg-1"> -->
-				<!-- <div class="container"> -->
-					<!-- <div class="row"> -->
-						<!-- <div class="col-lg-12"> -->
-							<!-- <h1>Section 1 Title</h1> -->
-						<!-- </div> -->
-					<!-- </div> -->
-				<!-- </div> -->
-			<!-- </section> -->
-			<!-- End Section 3 -->
-			
-			<!-- Start Section 4 -->
-			<!-- <section class="section-gap section-bg-2"> -->
-				<!-- <div class="container"> -->
-					<!-- <div class="row"> -->
-						<!-- <div class="col-lg-12"> -->
-							<!-- <h1>Section 1 Title</h1> -->
-						<!-- </div> -->
-					<!-- </div> -->
-				<!-- </div> -->
-			<!-- </section> -->
-			<!-- End Section 4 -->
-
 			<!-- Start Contact -->
 			<section class="section-gap section-bg-1">
 				<div class="container"> 

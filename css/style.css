@@ -31,6 +31,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin-left: auto;
 }
 
+a {
+	color: #ED5140;
+}
 
 .a-link {
     color: #fff;
@@ -356,6 +359,7 @@ h6,
 .logo {
 	border-radius: 5%;
 	max-width: 50% !important;
+	box-shadow: 5px 5px 15px 0px #F56A56;
 }
 
 /* Start Nav Menu */
@@ -364,7 +368,6 @@ h6,
 }
 
 .navbar-nav {
-	/* margin-right: 100px; */
 	height: 50px;
 }
 
@@ -377,7 +380,7 @@ h6,
   color: #fff;
   border-style: solid;
   border-width: 0px 0px 1px 0px;
-  border-color: #ffffff;
+  border-color: #ED5140;
 }
 
 .nav {
@@ -390,7 +393,7 @@ h6,
 .header-content {
 	position: fixed;
 	top: 26px;
-	background: rgba(104, 188, 230, 0.5);
+	background: rgba(57, 135, 201, 0.5);
 	color: #f1f1f1;
 	width: 100%;
 	padding: 0px;
@@ -459,7 +462,7 @@ ul, ol {
 }
 
 .fa-social-media-footer {
-	background: #000000 !important;
+	background: #F56A56 !important;
 	padding: 15px !important;
 	border-radius: 100% !important;
 	width: 43.72px !important;
@@ -467,7 +470,7 @@ ul, ol {
 
 .fa-social-media:hover, 
 .fa-social-media-footer:hover {
-	color: blue;
+	color: #ED5140;
 }
 
 .fa-arrow-up {
@@ -476,15 +479,38 @@ ul, ol {
 	bottom: 45px;
     right: 0px; 
 	cursor: pointer; 
-	background: #000000;
+	background: #F56A56;
 	border-radius: 100% !important;
 	padding: 15px;
 }
 
 .fa-arrow-up:hover {
-	color: blue;
-	background: #000 !important;
+	color: #ED5140;
+	background: #F56A56 !important;
 	padding: 15px;
+}
+
+.btn-pets {
+	position: absolute;
+	top: 350px;
+	right: 25px;
+}
+
+.card {
+	margin-top: 20px;
+}
+
+.card-header {
+	background-color: rgb(57, 135, 201);
+}
+
+.shopping-cart {
+	margin-top: 120px
+}
+
+.pet-sale {
+	margin-top: 150px;
+	margin-bottom: 30px;
 }
 
 /* Start Section */
@@ -618,7 +644,7 @@ ul, ol {
 	background: #fff;
 	color: #fff;
 	border-radius: 0px;
-	border: 1px solid #fff;
+	border: 1px solid #ED5140;
 }
 
 input:invalid {
@@ -628,7 +654,17 @@ input:invalid {
 
 .list-group-item {
 	background-color: transparent;
-	border: none;
+	border-bottom: #000;
+	border-left: none;
+	border-right: none;
+}
+
+.list-group {
+	padding: 0
+}
+
+.line-divider {
+	border-bottom: 1px solid #ED5140;
 }
 
 .privacy-policy,
@@ -843,10 +879,17 @@ input:invalid {
 		margin-left: auto;
 	}
 	
+	.navbar {
+		padding: 1.5rem 0rem !important;
+	}
+	
+	.navbar-nav {
+		height: 85px;
+	}
+	
 	.nav-link:hover {
 		background: #000000 !important;
 		color: #ffffff !important;
-		/* padding-left: 15px !important; */
 	}
 	
 	.navbar-toggler {
@@ -857,6 +900,35 @@ input:invalid {
 		position: relative !important;
 	}
 	
+	.btn-pets {
+		position: absolute;
+		top: 160px;
+		right: 0;
+	}
+	
+
+	#carousel {
+		height: 198px;
+		margin-left: -51px;
+	}
+	
+	#navigation {
+		margin-left: 10px;
+	}
+	
+	.nav-title {
+		visibility: hidden;
+		white-space: nowrap;
+	}
+	
+	.shopping-cart {
+		margin-top: 0px
+	}
+	
+	.pet-sale {
+		margin-top: 10px;
+	}
+	
 	/* Start About Us */
 	#aboutUsBannerVideo {
 		top: -30px;
@@ -865,7 +937,18 @@ input:invalid {
 	#aboutUsContent {
 		margin-top: -40px;
 	}
+	
+	.about-us-video-content {
+		padding: 170px 100px;
+	}
+	
 	/* Start About Us */
+	
+	/* Start Contact Us */
+	.contact-mail-symbol {
+		left: 100px;
+	}
+	/* End Contact Us */
 	
 	.footer-social-media {
 		float: left !important;
