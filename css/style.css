@@ -490,6 +490,11 @@ ul, ol {
 	padding: 15px;
 }
 
+.btn-link, .btn-link:hover {
+	color: #fff;
+}
+
+
 .btn-pets {
 	position: absolute;
 	top: 350px;
@@ -504,7 +509,7 @@ ul, ol {
 	background-color: rgb(57, 135, 201);
 }
 
-.shopping-cart {
+.shopping-cart, .pet-service {
 	margin-top: 120px
 }
 
@@ -512,6 +517,10 @@ ul, ol {
 	margin-top: 150px;
 	margin-bottom: 30px;
 }
+
+ .service-card {
+	 margin-top: 0 !important;
+ }
 
 /* Start Section */
 .section-gap {
@@ -695,7 +704,7 @@ input:invalid {
 }
 
 
-/* Start Banner */
+/* Start Home Banner */
 
 #container {
     display: flex;
@@ -921,7 +930,7 @@ input:invalid {
 		white-space: nowrap;
 	}
 	
-	.shopping-cart {
+	.shopping-cart, .pet-service {
 		margin-top: 0px
 	}
 	
