@@ -363,7 +363,7 @@ h6,
 .logo {
 	border-radius: 5%;
 	max-width: 70% !important;
-	box-shadow: 0px 0px 15px 10px #fff;
+	box-shadow: 0px 0px 15px 0px #fff;
 }
 
 /* Start Nav Menu */
