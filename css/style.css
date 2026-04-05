@@ -796,7 +796,7 @@ input:invalid {
 #button_d:checked ~ #navigation .label_d {
      cursor: default;
      color: #fff;
-     background-color: #063146;
+     background-color: #000;
 }
 
 /* End Banner */
