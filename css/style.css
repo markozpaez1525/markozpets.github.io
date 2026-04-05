@@ -727,7 +727,7 @@ input:invalid {
 #carousel {
     overflow: hidden;
     width: 85%;
-    height: 741px;
+    height: 672px;
     background-color: #fff;
 	margin-left: -139px;
 }
@@ -820,6 +820,7 @@ input:invalid {
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
+	
 	
 	.navbar > .container-mobile {
 		display: flex;
